@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row justify-content-center mt-5">
+            <h3 class="text-center mb-5">Task Tracker</h3>
+            <div class="col-md-6">
+                <div class="row mt-3">
+                    <input id="task-name"  type="text" placeholder="Enter Task Name">
+                </div>
+                <div class="row mt-3">
+                    <input id="task-desc"  type="text" placeholder="Enter Task Description">
+                </div>
+                <div class="row mt-3">
+                    <select class="p-1" name="status" id="status"> Status
+                        <option value="pending">Pending</option>
+                    <option value="conpleted">Completed</option>
+                    </select>
+
+                    <button id="submit" type="button" class="btn btn-secondary mt-5" >Submit</button>
+                    
+                </div>
+                <div class="row mt-4">
+                    <table class="table">
+                        <thead >
+                            <tr>
+                                <th class="bg-secondary text-white">Task Name</th>
+                                <th class="bg-secondary text-white">Description</th>
+                                <th class="bg-secondary text-white"> Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="tb-name"></td>
+                                <td id="tb-desc"></td>
+                                <td id="tbb-status"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <script src="app.js"></script>
+    </footer>
+</body>
+</html>
