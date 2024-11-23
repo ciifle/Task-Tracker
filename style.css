@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #6c757d;
+    margin: 20px 0;
+    font-size: 1.1em;
+    font-family: 'Arial', sans-serif;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    /* margin-bottom: 5px; */
+}
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
